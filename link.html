@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<!-- link.html -->
+<!-- the link that redirect-from-link refers to -->
+<html>
+<head>
+
+<title>Redirect from Link</title>
+
+</head>
+
+<body>
+
+<a href="./">Go back</a>
+
+
+<script type="text/javascript">
+
+const url = encodeURIComponent(document.referrer);
+window.opener.location.replace('https://www.example.com/?' + url);
+
+</script>
+
+
+</body>
+</html>
